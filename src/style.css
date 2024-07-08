@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-body: #d9dada;
+    --cor-white: white;
+    --cor-text: #000;
+    --cor-title: #3f4d62;
+    --cor-subtitle: #919ba9;
+    --cor-extra1: #7c7c7c;
+    --cor-extra2: #7c7474;
+
+    --font-one: 'Roboto', sans-serif;
+    --font-two: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf6ed;
+
+}
+
+/* Navbar styles */
+
+.logo {
+    max-width: 50%;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu ul li {
+    margin-left: 20px;
+}
+
+.navbar-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: var(--font-one);
+    font-weight: 800;
+}
+
+.navbar-menu ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Header styles */
+.cabecalho {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cabecalho .nome-empresa {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d3d3d3;
+    font-size: 4em;
+    text-shadow: 3px 3px 6px rgba(60, 75, 98, 0.8);
+    z-index: 2;
+    background: rgba(60, 75, 98, 0.7);
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 2px solid #8b94a2;
+    animation: glow 1.5s infinite alternate;
+    transition: color 0.3s ease, background 0.3s ease, border 0.3s ease;
+}
+
+.cabecalho .nome-empresa:hover {
+    color: #e4e4e6;
+    background: rgba(116, 116, 116, 0.8);
+    border: 2px solid #d3d3d3;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #d3d3d3, 0 0 30px #d3d3d3, 0 0 40px #8b94a2, 0 0 50px #8b94a2, 0 0 60px #8b94a2, 0 0 70px #8b94a2;
+    }
+
+    to {
+        text-shadow: 0 0 30px #d3d3d3, 0 0 40px #8b94a2, 0 0 50px #8b94a2, 0 0 60px #8b94a2, 0 0 70px #8b94a2, 0 0 80px #8b94a2;
+    }
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.titulo {
+    font-size: 2em;
+    font-family: var(--font-one);
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--cor-title);
+}
+
+.subtitulo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--cor-title);
+}
+
+
+/* Seção sobre */
+
+#sobre {
+    align-items: flex-start;
+}
+
+.sobre-texto {
+    font-size: 2rem;
+    font-family: var(--font-one);
+}
+
+/* Seção serviços */
+
+#servicos {
+    background: var(--cor-body);
+}
+
+.container-servicos {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.container-beneficios ul,
+.container-servicos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#servicos ul li {
+    font-family: var(--font-two);
+    font-size: 1.3rem;
+}
+
+#servicos li {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+    color: var(--cor-title);
+}
+
+/* Container Trabalho */
+.container-trabalho {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(60, 75, 98, 0.5);
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.container-trabalho h2 {
+    background: var(--cor-subtitle);
+    margin-bottom: 10px;
+}
+
+.container-trabalho h3 {
+    font-size: 1.6rem;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+.container-trabalho ul li {
+    position: relative;
+    font-size: 1rem;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.container-trabalho ul li::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--cor-title);
+    border-radius: 50%;
+}
+
+.container-trabalho ul {
+    padding: 0;
+}
+
+.container-trabalho li {
+    margin-bottom: 10px;
+}
+
+
+/* Seção beneficios */
+
+.container-beneficios {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.container-beneficios h3 {
+    font-size: 1.6rem;
+
+    margin-bottom: 10px;
+}
+
+#beneficios ul li {
+    font-family: var(--font-two);
+    font-size: 1.3rem;
+}
+
+#beneficios li {
+    margin-bottom: 10px;
+}
+
+
+#beneficios {
+    font-family: var(--font-two);
+    margin-left: 15px;
+}
+
+#beneficios h3 {
+    color: var(--cor-title);
+}
+
+/* Estilo para o container dos carrosséis */
+#fotos {
+    background: var(--cor-body);
+}
+
+#fotos h2 {
+    margin-bottom: 15px;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    max-width: 300px; /* Ajuste o tamanho máximo conforme necessário */
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: var(--cor-title);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, max-height 0.3s ease, width 0.3s ease, height 0.3s ease;
+    max-height: 200px;
+    width: 100%; /* Garante que o carrossel ocupe toda a largura do contêiner */
+    height: 200px; /* Define uma altura fixa para o carrossel */
+}
+
+.carousel.expanded {
+    transform: scale(1.0);
+    z-index: 10;
+    max-height: 80vh; /* Altura máxima aumentada */
+    width: 90vw; /* Aumenta a largura quando expandido */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+}
+
+.carousel.expanded .carousel-item {
+    height: auto; /* Permite que a altura se ajuste automaticamente */
+    width: 100%; /* Garante que o item do carrossel ocupe toda a largura do carrossel expandido */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Ajusta a altura da imagem automaticamente para manter a proporção */
+    object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner mantendo a proporção */
+    border-radius: 10px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.expand-btn {
+    display: block;
+    margin-top: 10px;
+    background-color: var(--cor-title);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.overlay-content {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.overlay-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.overlay-carousel .carousel-inner {
+    display: flex;
+}
+
+.overlay-carousel .carousel-item {
+    min-width: 100%;
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+}
+
+.overlay-carousel .carousel-item img {
+    width: 100%;
+    height: auto; /* Ajusta a altura da imagem automaticamente para manter a proporção */
+    object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner mantendo a proporção */
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+
+/* Seção redes de contato */
+.redes-contato {
+    box-shadow: 0 0 10px rgba(40, 51, 66, 0.5);
+    margin-bottom: 10px;
+    background: var(--cor-body);
+    padding: 20px;
+    /* Adiciona espaço interno ao redor do conteúdo */
+    border-radius: 10px;
+    /* Opcional: adiciona bordas arredondadas */
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+}
+
+.redes-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza o conteúdo do .redes-div horizontalmente */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.redes-div h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0;
+    /* Ajuste conforme necessário */
+    margin-bottom: 20px;
+    /* Adiciona espaço abaixo do h2 */
+}
+
+.redes-text {
+    display: flex;
+    align-items: center;
+    /* Alinha a imagem e o texto verticalmente no centro */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    margin-top: 10px;
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.redes-text a {
+    text-decoration: none;
+    color: var(--cor-text);
+    font-size: 1.2rem;
+    margin-left: 10px;
+    /* Espaço entre a imagem e o texto */
+}
+
+.img-email {
+    margin-right: 10px;
+    /* Adiciona um espaço à direita da imagem */
+}
+
+/* Seção contato */
+
+#contato {
+    box-shadow: var(--cor-subtitle);
+}
+
+.contato-text {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-left: 65%;
+    margin-bottom: 10px;
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contato-img {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.contato-form .titulo {
+    text-align: center;
+    color: var(--cor-title);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contato-form input[type="text"],
+.contato-form input[type="tel"],
+.contato-form input[type="email"],
+.contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contato-form input[type="text"]:hover,
+.contato-form input[type="tel"]:hover,
+.contato-form input[type="email"]:hover,
+.contato-form textarea:hover,
+.contato-form input[type="text"]:focus,
+/*Para ficar o hover quando estiver no campo*/
+.contato-form input[type="tel"]:focus,
+.contato-form input[type="email"]:focus,
+.contato-form textarea:focus {
+    background: #bac6d8;
+    border-color: var(--cor-title);
+}
+
+
+.contato-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-title);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contato-form button[type="submit"]:hover {
+    background-color: #8b94a2;
+}
+
+
+/* Seção endereço */
+.endereco-info {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#endereco {
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#endereco h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.endereco-info {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Seção Rodape */
+
+.rodape {
+    background: var(--cor-title);
+    color: var(--cor-white);
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape a {
+    color: var(--cor-white);
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+
+/* Esconder o botão em telas maiores que 768px */
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .mapa iframe {
+        height: 450px;
+    }
+}
+
+/* Mostrar o botão em telas menores que 768px */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+}
