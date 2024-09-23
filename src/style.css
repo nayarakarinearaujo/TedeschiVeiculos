@@ -28,6 +28,9 @@ body {
 
 }
 
+section {
+    scroll-margin-top: 70px; 
+}
 /* Navbar styles */
 
 .logo {
@@ -35,11 +38,11 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.5);
+    background: #020810;
 }
 
 .navbar .container {
@@ -72,12 +75,25 @@ body {
 }
 
 /* Header styles */
-.cabecalho {
+/* .cabecalho {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     text-align: center;
+} */
+
+.cabecalho {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Mantenha a altura da tela */
+    overflow: hidden;
+    text-align: center;
+    background-image: url(../imagens/imagens/foto-capa-header.jpg);
+    background-size: cover; /* Cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-attachment: fixed; /* Efeito fixo no fundo */
 }
 
 .cabecalho .nome-empresa {
@@ -89,13 +105,14 @@ body {
     font-size: 4em;
     text-shadow: 3px 3px 6px rgba(60, 75, 98, 0.8);
     z-index: 2;
-    background: rgba(60, 75, 98, 0.7);
+    background: rgba(60, 75, 98, 0.7); /* Fundo sem o attachment */
     padding: 20px 40px;
     border-radius: 10px;
     border: 2px solid #8b94a2;
     animation: glow 1.5s infinite alternate;
     transition: color 0.3s ease, background 0.3s ease, border 0.3s ease;
 }
+
 
 .cabecalho .nome-empresa:hover {
     color: #e4e4e6;
@@ -113,11 +130,7 @@ body {
     }
 }
 
-.header-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 
 section {
     padding: 60px 20px;
@@ -485,7 +498,6 @@ h3 {
 
 .img-email {
     margin-right: 10px;
-    /* Adiciona um espaço à direita da imagem */
 }
 
 /* Seção contato */
@@ -502,21 +514,14 @@ h3 {
 }
 
 .contato {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contato-img {
-    margin-bottom: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 
 .contato-form {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0; /* Remove a margem externa */
+    padding: 10px; /* Ajuste o padding se necessário */
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

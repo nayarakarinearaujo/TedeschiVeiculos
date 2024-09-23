@@ -78,3 +78,28 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide('carousel2', currentIndex['carousel2']);
     showSlide('carousel3', currentIndex['carousel3']);
 });
+
+
+// Função do scroll Suave
+function initScrollSuave() {
+    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+    const navbarMenu = document.querySelector('.navbar-menu'); // Corrigido: adicionado ponto
+
+    function scrollToSection(event) {
+        event.preventDefault();
+        const href = event.currentTarget.getAttribute("href");
+        const section = document.querySelector(href);
+
+        section.scrollIntoView({ // Corrigido: alterado para scrollIntoView
+            behavior: "smooth",
+            block: "start",
+        });
+
+        navbarMenu.classList.remove('active');
+    }
+
+    linksInternos.forEach((link) => {
+        link.addEventListener("click", scrollToSection);
+    });
+}
+initScrollSuave();

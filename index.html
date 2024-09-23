@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar js-menu">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" id="menu-toggle">
@@ -28,11 +28,11 @@
             </div>
             <div class="navbar-menu" id="navbar-menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#header-img">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#beneficios">Benefícios</a></li>
-                    <li><a href="#fotos">Fotos</a></li>
+                    <!-- <li><a href="#fotos">Fotos</a></li> -->
                     <li><a href="#contato">Contato</a></li>
                     <li><a href="#endereco">Endereço</a></li>
                 </ul>
@@ -40,9 +40,9 @@
         </div>
     </nav>
 
-    <header class="cabecalho">
+    <header class="cabecalho" id="header-img" >
         <h1 class="nome-empresa">TEDESCHI VEÍCULOS</h1>
-        <img src="imagens/imagens/foto-capa-header.jpg" alt="Foto de uma mercedez com o farol aceso" class="header-img">
+        <!-- <img src="imagens/imagens/foto-capa-header.jpg" alt="Foto de uma mercedez com o farol aceso" class="header-img"> -->
     </header>
 
     <section id="sobre">
@@ -84,25 +84,6 @@
                     duradouro.</li>
                 <li><span class="bold">Entrega:</span> Inspeção final e entrega do veículo com garantia de satisfação.
                 </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="beneficios">
-        <div class="container-beneficios">
-            <h2 class="titulo">BENEFÍCIOS</h2>
-            <h3>Por Que Escolher a Oficina Tedeschi?</h3>
-            <ul>
-                <li><span class="bold">Qualidade Garantida:</span> Usamos apenas tintas e materiais de alta qualidade
-                    para assegurar um acabamento
-                    duradouro e resistente.</li>
-                <li><span class="bold">Equipe Especializada:</span> Profissionais treinados e com vasta experiência no
-                    setor automotivo.</li>
-                <li><span class="bold">Tecnologia de Ponta:</span> Equipamentos modernos para um serviço rápido e
-                    eficiente.</li>
-                <li><span class="bold">Satisfação do Cliente:</span> Prioridade máxima na satisfação do cliente com
-                    avaliações e feedbacks
-                    positivos.</li>
             </ul>
         </div>
     </section>
@@ -210,6 +191,26 @@
         </div>
     </section>
     
+    
+    <section id="beneficios">
+        <div class="container-beneficios">
+            <h2 class="titulo">BENEFÍCIOS</h2>
+            <h3>Por Que Escolher a Oficina Tedeschi?</h3>
+            <ul>
+                <li><span class="bold">Qualidade Garantida:</span> Usamos apenas tintas e materiais de alta qualidade
+                    para assegurar um acabamento
+                    duradouro e resistente.</li>
+                <li><span class="bold">Equipe Especializada:</span> Profissionais treinados e com vasta experiência no
+                    setor automotivo.</li>
+                <li><span class="bold">Tecnologia de Ponta:</span> Equipamentos modernos para um serviço rápido e
+                    eficiente.</li>
+                <li><span class="bold">Satisfação do Cliente:</span> Prioridade máxima na satisfação do cliente com
+                    avaliações e feedbacks
+                    positivos.</li>
+            </ul>
+        </div>
+    </section>
+
 
     <section id="contato">
         <h1 class="titulo">Agende seu Serviço Hoje Mesmo!</h1>
@@ -236,12 +237,8 @@
         <P class="contato-text">Ou preencha o formulário abaixo.</P>
         <div class="contato">
 
-            <div class="contato-img">
-                <img src="imagens/imagens/icons8-envelope-240.png" alt="Imagem de um envelope fechado">
-            </div>
-
             <div class="contato-form">
-
+                <img src="imagens/imagens/icons8-envelope-240.png" alt="Imagem de um envelope fechado" width="100px">
                 <h2 class="titulo">CONTATO</h2>
                 <form id="contatoForm">
                     <input type="text" id="name" name="name" placeholder="Seu nome" required>
