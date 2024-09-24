@@ -103,3 +103,17 @@ function initScrollSuave() {
     });
 }
 initScrollSuave();
+
+
+//Função para o botão menu
+
+function buttonToggle() {
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarMenu = document.querySelector('.navbar-menu');
+
+    navbarToggle.addEventListener('click', function () {
+        navbarMenu.classList.toggle('active');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', buttonToggle);

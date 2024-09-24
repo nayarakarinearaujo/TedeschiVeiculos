@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/style.css">
     <link rel="shortcut icon" href="imagens/imagens/logo-icon.jpeg" type="image/x-icon">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
     <title>Tedeschi Veículos - Serviços de Pintura Automotiva</title>
@@ -21,9 +22,10 @@
     <nav class="navbar js-menu">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" id="menu-toggle">
-                    <img src="imagens/imagens/icon-menu.png" alt="Menu">
+                <button class="menu-btn navbar-toggle">
+                    <i class="fas fa-bars"></i>
                 </button>
+
                 <img class="logo" src="imagens/imagens/logo-.jpg" alt="Logo da Tedeschi Veículos">
             </div>
             <div class="navbar-menu" id="navbar-menu">
@@ -42,7 +44,6 @@
 
     <header class="cabecalho" id="header-img" >
         <h1 class="nome-empresa">TEDESCHI VEÍCULOS</h1>
-        <!-- <img src="imagens/imagens/foto-capa-header.jpg" alt="Foto de uma mercedez com o farol aceso" class="header-img"> -->
     </header>
 
     <section id="sobre">
@@ -219,35 +220,46 @@
             <div class="redes-div">
                 <h2>Entre em contato conosco pelo telefone abaixo:</h2>
 
-                <p class="redes-text"><a href="https://wa.me/5519988934901" target="_blank" rel="external">
-                        <img src="imagens/imagens/icons8-whatsapp-48.png" alt="WhatsApp">
-                        Telefone: (019) / (019)
-                    </a>
-                </p>
-                <p class="redes-text">
-                    <img class="img-email" src="imagens/imagens/icons8-envelope-35.png" alt="E-mail">
-                    <a href="mailto:tedeschiveiculos@ig.com.br">
-                        E-mail: tededchiveiculos@ig.com.br
-                    </a>
-                </p>
+                <div class="contato-container">
+                    <p class="redes-text"><a href="https://wa.me/5519988934901" target="_blank" rel="external">
+                            <img src="imagens/imagens/icons8-whatsapp-48.png" alt="WhatsApp">
+                            Telefone: (019) 3243-3980
+                        </a>
+                    </p>
+                </div>
+
+                <div  class="contato-container">
+                    <p class="redes-text">
+                        <img class="img-email" src="imagens/imagens/icons8-envelope-35.png" alt="E-mail">
+                        <a href="mailto:tedeschiveiculos@ig.com.br">
+                            E-mail: tedeschiveiculos@ig.com.br
+                        </a>
+                    </p>
+                </div>
+                    <span  class="contato-text">
+                        <P>Ou preencha o formulário abaixo.</P>
+                    </span>
             </div>
         </article>
 
-
-        <P class="contato-text">Ou preencha o formulário abaixo.</P>
         <div class="contato">
 
             <div class="contato-form">
-                <img src="imagens/imagens/icons8-envelope-240.png" alt="Imagem de um envelope fechado" width="100px">
-                <h2 class="titulo">CONTATO</h2>
+                <div class="contato-header">
+                    <img src="imagens/imagens/icons8-envelope-240.png" alt="Imagem de um envelope fechado" width="100px">
+                    <h2>CONTATO</h2>
+                </div>
                 <form id="contatoForm">
                     <input type="text" id="name" name="name" placeholder="Seu nome" required>
                     <input type="tel" id="tel" name="Telefone" placeholder="Seu Telefone" required>
                     <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
                     <textarea id="message" name="message" placeholder="Sua Mensagem"></textarea>
-                    <button type="submit">Enviar</button>
+                    <div class="contato-button">
+                        <button type="submit">Enviar</button>
+                    </div>
                 </form>
             </div>
+            
         </div>
     </section>
 

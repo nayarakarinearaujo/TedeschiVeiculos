@@ -50,6 +50,17 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background-color: #020810;;
+
+}
+
+.menu-btn {
+    background-color: var(--cor-extremidade);
+    color: white;
+    border: none;
+    padding: 20px 30px; 
+    font-size: 18px;    
+    cursor: pointer;
 }
 
 .navbar-menu ul {
@@ -74,26 +85,17 @@ section {
     border-radius: 5px;
 }
 
-/* Header styles */
-/* .cabecalho {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
-} */
-
 .cabecalho {
     position: relative;
     width: 100%;
-    height: 100vh; /* Mantenha a altura da tela */
+    height: 100vh; 
     overflow: hidden;
     text-align: center;
     background-image: url(../imagens/imagens/foto-capa-header.jpg);
-    background-size: cover; /* Cobre toda a área */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    background-attachment: fixed; /* Efeito fixo no fundo */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 .cabecalho .nome-empresa {
@@ -105,7 +107,7 @@ section {
     font-size: 4em;
     text-shadow: 3px 3px 6px rgba(60, 75, 98, 0.8);
     z-index: 2;
-    background: rgba(60, 75, 98, 0.7); /* Fundo sem o attachment */
+    background: rgba(60, 75, 98, 0.7); 
     padding: 20px 40px;
     border-radius: 10px;
     border: 2px solid #8b94a2;
@@ -294,14 +296,15 @@ section {
     gap: 20px;
     margin: 30px 0;
     justify-content: center;
+    flex-wrap: wrap; /* Permite que os carrosséis se movam para a próxima linha */
 }
 
 .carousel-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%; /* Ajuste a largura conforme necessário */
-    max-width: 300px; /* Ajuste o tamanho máximo conforme necessário */
+    width: 30%; /* Defina uma largura padrão para telas grandes */
+    max-width: 300px;
     margin-bottom: 40px;
 }
 
@@ -319,16 +322,15 @@ h3 {
     border-radius: 10px;
     transition: transform 0.3s ease, max-height 0.3s ease, width 0.3s ease, height 0.3s ease;
     max-height: 200px;
-    width: 100%; /* Garante que o carrossel ocupe toda a largura do contêiner */
-    height: 200px; /* Define uma altura fixa para o carrossel */
+    width: 100%;
+    height: 200px; 
 }
 
 .carousel.expanded {
     transform: scale(1.0);
     z-index: 10;
-    max-height: 80vh; /* Altura máxima aumentada */
-    width: 90vw; /* Aumenta a largura quando expandido */
-    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    max-height: 80vh;
+    width: 90vw; 
 }
 
 .carousel-inner {
@@ -338,18 +340,18 @@ h3 {
 
 .carousel-item {
     min-width: 100%;
-    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    height: auto; 
 }
 
 .carousel.expanded .carousel-item {
-    height: auto; /* Permite que a altura se ajuste automaticamente */
-    width: 100%; /* Garante que o item do carrossel ocupe toda a largura do carrossel expandido */
+    height: auto; 
+    width: 100%; 
 }
 
 .carousel-item img {
     width: 100%;
-    height: auto; /* Ajusta a altura da imagem automaticamente para manter a proporção */
-    object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner mantendo a proporção */
+    height: auto; 
+    object-fit: contain; 
     border-radius: 10px;
 }
 
@@ -417,13 +419,13 @@ h3 {
 
 .overlay-carousel .carousel-item {
     min-width: 100%;
-    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    height: auto; 
 }
 
 .overlay-carousel .carousel-item img {
     width: 100%;
-    height: auto; /* Ajusta a altura da imagem automaticamente para manter a proporção */
-    object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner mantendo a proporção */
+    height: auto; 
+    object-fit: contain; 
     border-radius: 10px;
 }
 
@@ -449,21 +451,16 @@ h3 {
     margin-bottom: 10px;
     background: var(--cor-body);
     padding: 20px;
-    /* Adiciona espaço interno ao redor do conteúdo */
     border-radius: 10px;
-    /* Opcional: adiciona bordas arredondadas */
     display: flex;
     justify-content: center;
-    /* Centraliza o conteúdo horizontalmente */
     align-items: center;
-    /* Centraliza o conteúdo verticalmente */
 }
 
 .redes-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centraliza o conteúdo do .redes-div horizontalmente */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -472,20 +469,15 @@ h3 {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 0;
-    /* Ajuste conforme necessário */
     margin-bottom: 20px;
-    /* Adiciona espaço abaixo do h2 */
 }
 
 .redes-text {
     display: flex;
     align-items: center;
-    /* Alinha a imagem e o texto verticalmente no centro */
     justify-content: center;
-    /* Centraliza o conteúdo horizontalmente */
     margin-top: 10px;
     text-align: center;
-    /* Centraliza o texto */
 }
 
 .redes-text a {
@@ -493,7 +485,6 @@ h3 {
     color: var(--cor-text);
     font-size: 1.2rem;
     margin-left: 10px;
-    /* Espaço entre a imagem e o texto */
 }
 
 .img-email {
@@ -501,37 +492,90 @@ h3 {
 }
 
 /* Seção contato */
-
 #contato {
     box-shadow: var(--cor-subtitle);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--cor-body);
+    text-align: center; 
+}
+
+.redes-contato {
+    margin: 20px 0;
+    background-color: #f1f1f1;
+}
+
+.redes-div h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--cor-title);
+}
+
+.contato-container {
+    background-color: #919ba9c9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: background-color 0.3s;
+}
+
+.contato-container:hover {
+    background-color: #bac6d8;
+}
+
+/* .redes-text a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+} */
+
+.redes-text img {
+    margin-right: 10px;
 }
 
 .contato-text {
     font-size: 1.2rem;
-    margin-top: 30px;
-    margin-left: 65%;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    text-decoration: underline;
+    color: var(--cor-title);
 }
 
 .contato {
     display: flex;
-   
+    justify-content: center; 
+    margin-top: 20px; 
 }
 
 .contato-form {
+    display: flex;
+    align-items: center;
     max-width: 800px;
-    margin: 0; /* Remove a margem externa */
-    padding: 10px; /* Ajuste o padding se necessário */
+    width: 100%;
+    margin: 0 auto; 
+    padding: 20px; 
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    background-color:#f1f1f1;
+    flex-direction: column;
 }
 
-.contato-form .titulo {
-    text-align: center;
+.contato-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-form img {
+    margin-right: 10px; 
+}
+
+.contato-header h2 {
     color: var(--cor-title);
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -552,7 +596,6 @@ h3 {
 .contato-form input[type="email"]:hover,
 .contato-form textarea:hover,
 .contato-form input[type="text"]:focus,
-/*Para ficar o hover quando estiver no campo*/
 .contato-form input[type="tel"]:focus,
 .contato-form input[type="email"]:focus,
 .contato-form textarea:focus {
@@ -560,9 +603,13 @@ h3 {
     border-color: var(--cor-title);
 }
 
+.contato-button {
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+}
 
-.contato-form button[type="submit"] {
-    width: 100%;
+.contato-button button[type="submit"] {
+    width: 50%;
     padding: 10px;
     background-color: var(--cor-title);
     color: #fff;
@@ -573,7 +620,7 @@ h3 {
     transition: background-color 0.3s ease;
 }
 
-.contato-form button[type="submit"]:hover {
+.contato-button button[type="submit"]:hover {
     background-color: #8b94a2;
 }
 
@@ -594,7 +641,7 @@ h3 {
 #endereco {
     background-color: #d3d3d3;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -650,7 +697,89 @@ h3 {
 
 /* Mostrar o botão em telas menores que 768px */
 @media (max-width: 768px) {
-    .navbar-toggle {
-        display: block;
+
+    .navbar-menu {
+        display: none; /* Começa escondido */
+        flex-direction: column; 
+        width: 100%; 
+        background-color: #020810; 
+        position: absolute;
+        top: 90px; 
+        left: 0;  
+    }
+    
+    .navbar-menu.active {
+        display: flex; /* Exibe quando ativo */
+    }
+
+    .navbar-menu ul {
+        display: flex;
+        flex-direction: column; 
+        padding: 0;
+        margin: 0; 
+        list-style: none; 
+    }
+
+    .navbar-menu ul li {
+        margin: 10px 0; 
+    }
+
+    .navbar-menu ul li a {
+        padding: 5px 10px; 
+        font-size: 14px; 
+    }
+
+
+    .cabecalho .nome-empresa {
+        font-size: 2.5em; /* Ajusta o tamanho da fonte */
+    }
+
+    .titulo {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .contato-form {
+        padding: 10px; /* Ajusta o padding para smartphones */
+    }
+
+    .contato-button button[type="submit"] {
+        width: 90%; /* Ajusta a largura do botão */
+    }
+
+    .navbar-menu {
+        flex-direction: column; /* Exibe o menu verticalmente */
+        padding: 10px; /* Adiciona padding */
+    }
+
+    .navbar-menu ul li {
+        margin: 5px 0; /* Espaçamento menor entre itens */
+    }
+
+    .carousel-wrapper {
+        flex: 1 1 100%; /* Em telas menores, cada carrossel ocupa 100% da largura */
+        max-width: none; /* Remove a limitação de largura */
+    }
+
+    .carousel-button {
+        padding: 10px; /* Ajusta o tamanho do botão */
+    }
+}
+
+/* Estilos para telas de tablets */
+@media (max-width: 1024px) {
+    .cabecalho .nome-empresa {
+        font-size: 3em; /* Ajusta o tamanho da fonte */
+    }
+
+    .titulo {
+        font-size: 1.8em; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .contato-form {
+        padding: 5px; /* Reduz o padding */
+    }
+
+    .contato-button button[type="submit"] {
+        width: 70%; /* Ajusta a largura do botão */
     }
 }
