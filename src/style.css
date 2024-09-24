@@ -731,13 +731,14 @@ h3 {
     .navbar-menu {
         top: 60px; 
     }
+
     .navbar-menu {
         display: none; 
         flex-direction: column; 
         width: 100%; 
         background-color: #020810; 
         position: absolute;
-        top: 90px; 
+        top: 70px; 
         left: 0;  
     }
     
