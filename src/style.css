@@ -99,6 +99,7 @@ section {
 }
 
 .cabecalho .nome-empresa {
+    width: 40%;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -697,16 +698,42 @@ h3 {
 
 /* Mostrar o botão em telas menores que 768px */
 @media (max-width: 768px) {
+    .cabecalho {
+        height: 50vh; 
+        padding-top: 60px; 
+        background-attachment: scroll; 
+        background-size: cover; 
+        background-position: center; 
+    }
 
     .cabecalho .nome-empresa {
-        font-size: 1.5em; 
+        width: 50%; 
         position: absolute;
-        top: 40%;
+        top: 55%; 
         left: 50%;
+        transform: translate(-50%, -50%); 
+        color: #d3d3d3;
+        font-size: 2em;
+        text-shadow: 2px 2px 4px rgba(60, 75, 98, 0.8); 
+        z-index: 2;
+        background: rgba(60, 75, 98, 0.7); 
+        padding: 15px 20px; 
+        border-radius: 10px;
+        border: 2px solid #8b94a2;
+        animation: glow 1.5s infinite alternate;
+        transition: color 0.3s ease, background 0.3s ease, border 0.3s ease;
+    }
+
+    .titulo {
+        font-size: 1.5em; 
+        margin-top: 10px; 
     }
 
     .navbar-menu {
-        display: none; /* Começa escondido */
+        top: 60px; 
+    }
+    .navbar-menu {
+        display: none; 
         flex-direction: column; 
         width: 100%; 
         background-color: #020810; 
@@ -716,7 +743,7 @@ h3 {
     }
     
     .navbar-menu.active {
-        display: flex; /* Exibe quando ativo */
+        display: flex; 
     }
 
     .navbar-menu ul {
@@ -737,7 +764,7 @@ h3 {
     }
 
     .titulo {
-        font-size: 1.5em; /* Ajusta o tamanho da fonte do título */
+        font-size: 1.5em; 
     }
 
     .sobre-texto {
@@ -746,47 +773,47 @@ h3 {
     }
     
     .contato-form {
-        padding: 10px; /* Ajusta o padding para smartphones */
+        padding: 10px; 
     }
 
     .contato-button button[type="submit"] {
-        width: 90%; /* Ajusta a largura do botão */
+        width: 90%; 
     }
 
     .navbar-menu {
-        flex-direction: column; /* Exibe o menu verticalmente */
-        padding: 10px; /* Adiciona padding */
+        flex-direction: column; 
+        padding: 10px; 
     }
 
     .navbar-menu ul li {
-        margin: 5px 0; /* Espaçamento menor entre itens */
+        margin: 5px 0; 
     }
 
     .carousel-wrapper {
-        flex: 1 1 100%; /* Em telas menores, cada carrossel ocupa 100% da largura */
-        max-width: none; /* Remove a limitação de largura */
+        flex: 1 1 100%; 
+        max-width: none;
     }
 
     .carousel-button {
-        padding: 10px; /* Ajusta o tamanho do botão */
+        padding: 10px; 
     }
 }
 
 /* Estilos para telas de tablets */
 @media (max-width: 1024px) {
     .cabecalho .nome-empresa {
-        font-size: 3em; /* Ajusta o tamanho da fonte */
+        font-size: 3em; 
     }
 
     .titulo {
-        font-size: 1.8em; /* Ajusta o tamanho da fonte do título */
+        font-size: 1.8em; 
     }
 
     .contato-form {
-        padding: 5px; /* Reduz o padding */
+        padding: 5px; 
     }
 
     .contato-button button[type="submit"] {
-        width: 70%; /* Ajusta a largura do botão */
+        width: 70%; 
     }
 }
