@@ -199,12 +199,14 @@ section {
 
 /* Container Trabalho */
 .container-trabalho {
+    background-color: #FAF6ED;
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(60, 75, 98, 0.5);
     padding: 20px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
+    border-radius: 6px;
 }
 
 .container-trabalho h2 {
@@ -450,12 +452,14 @@ h3 {
 .redes-contato {
     box-shadow: 0 0 10px rgba(40, 51, 66, 0.5);
     margin-bottom: 10px;
-    background: var(--cor-body);
+    /* background: var(--cor-body); */
     padding: 20px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
+    /* background-color: #f1f1f1; */
 }
 
 .redes-div {
@@ -497,13 +501,8 @@ h3 {
     box-shadow: var(--cor-subtitle);
     padding: 20px;
     border-radius: 8px;
-    background-color: var(--cor-body);
+    /* background-color: var(--cor-body); */
     text-align: center; 
-}
-
-.redes-contato {
-    margin: 20px 0;
-    background-color: #f1f1f1;
 }
 
 .redes-div h2 {
@@ -513,7 +512,7 @@ h3 {
 }
 
 .contato-container {
-    background-color: #919ba9c9;
+    background-color: #d3d3d3;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -524,7 +523,7 @@ h3 {
 }
 
 .contato-container:hover {
-    background-color: #bac6d8;
+    background-color: #a9a8a8;
 }
 
 /* .redes-text a {
@@ -560,7 +559,7 @@ h3 {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color:#f1f1f1;
+    background-color:#d3d3d3;
     flex-direction: column;
 }
 
