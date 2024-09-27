@@ -117,3 +117,35 @@ function buttonToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', buttonToggle);
+
+
+
+// Função para enviar a mensagem para o WhatsApp
+function sendToWhatsApp(message) {
+    const phoneNumber = "5519999606402"; 
+    const whatsappMessage = encodeURIComponent(message); 
+    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${whatsappMessage}`); 
+}
+
+// Função para lidar com o envio do formulário
+function handleFormSubmit(event) {
+    event.preventDefault(); 
+
+    // Obtém os valores dos campos do formulário
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    // Constrói a mensagem a ser enviada
+    const whatsappMessage = `Nome: ${name} E-mail: ${email} Telefone: ${phone} Mensagem: ${message}`;
+
+    // Envia a mensagem para o WhatsApp
+    sendToWhatsApp(whatsappMessage);
+}
+
+// Adiciona o ouvinte de evento ao formulário quando a página é carregada
+window.onload = function() {
+    const form = document.getElementById("contatoForm"); 
+    form.addEventListener("submit", handleFormSubmit); 
+};
