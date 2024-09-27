@@ -652,6 +652,11 @@ h3 {
     font-size: 2em;
 }
 
+#endereco div > a {
+text-decoration: none;
+color: var(--cor-text);
+}
+
 .endereco-info {
     font-size: 1.2em;
     line-height: 1.6;
