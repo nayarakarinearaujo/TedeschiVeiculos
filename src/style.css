@@ -584,6 +584,7 @@ h3 {
 .contato-form input[type="email"],
 .contato-form textarea {
     width: 100%;
+    background-color: #FAF6ED;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
