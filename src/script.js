@@ -138,7 +138,13 @@ function handleFormSubmit(event) {
     const message = document.getElementById("message").value;
 
     // Constrói a mensagem a ser enviada
-    const whatsappMessage = `Nome: ${name} E-mail: ${email} Telefone: ${phone} Mensagem: ${message}`;
+    const whatsappMessage = `Olá! Meu nome é ${name}. \n` +
+    `Gostaria de saber mais sobre os serviços. \n` +
+    `Aqui estão meus detalhes: \n` +
+    `E-mail: ${email} \n` +
+    `Telefone: ${phone} \n` +
+    `Mensagem: ${message} \n\n` +
+    `Aguardo seu retorno! Obrigado!`;
 
     // Envia a mensagem para o WhatsApp
     sendToWhatsApp(whatsappMessage);
