@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', buttonToggle);
 
 // Função para enviar a mensagem para o WhatsApp
 function sendToWhatsApp(message) {
-    const phoneNumber = "5519999606402"; 
+    const phoneNumber = "5519982441900"; 
     const whatsappMessage = encodeURIComponent(message); 
     window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${whatsappMessage}`); 
 }
